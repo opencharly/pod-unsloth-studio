@@ -1,7 +1,7 @@
 version: 2026.232.0520
 unsloth-studio:
     candy:
-        version: 2026.168.1108
+        version: 2026.243.0100
         description: |
             Unsloth Studio web UI for GPU LLM fine-tuning, backed by a pixi PyTorch/transformers environment and composed llama.cpp GGUF export tools
             unsloth-studio owns the pixi fine-tuning environment (Python 3.13 +
@@ -12,11 +12,11 @@ unsloth-studio:
             at ~/llama.cpp -- so the environment and the composition's effect are
             directly checkable.
         require:
-            - '@github.com/opencharly/layer-cuda:v2026.235.2121'
-            - '@github.com/opencharly/layer-supervisord:v2026.235.2056'
+            - '@github.com/opencharly/layer-cuda:v2026.243.0408'
+            - '@github.com/opencharly/layer-supervisord:v2026.240.0121'
         candy:
-            - '@github.com/opencharly/layer-llama-cpp:v2026.237.457'
-            - '@github.com/opencharly/layer-unsloth:v2026.237.557'
+            - '@github.com/opencharly/layer-llama-cpp:v2026.240.0201'
+            - '@github.com/opencharly/layer-unsloth:v2026.239.1643'
         # The unsloth Studio installer (install.sh) builds its GGUF inference engine
         # from source at install time and HARD-requires cmake + git + a C/C++ toolchain;
         # on Arch it does NOT auto-install them (apt-only), so it aborts with
